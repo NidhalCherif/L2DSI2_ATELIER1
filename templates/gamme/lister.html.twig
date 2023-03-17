@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+{% block title %} {{ parent() }}L2DSI2
+{% endblock %}
+{% block body %}
+<h1>Liste des gammes</h1>
+<ul>
+    {% for value in tab  %}
+        <li>{{ value |title}}</li>
+
+    {% endfor %}
+</ul>
+{% endblock %}

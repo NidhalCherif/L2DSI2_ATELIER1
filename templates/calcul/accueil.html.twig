@@ -1,0 +1,8 @@
+{% extends 'base.html.twig' %}
+{% block title %} {{ parent() }}L2DSI2
+{% endblock %}
+{% block body %}
+    <a href="{{path('app_somme',{'A':7,'B':5})}}">Somme</a> <br>
+    <a href="{{path('app_sous',{'A':7,'B':5})}}">Soustraction</a>
+
+{% endblock %}
